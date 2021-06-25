@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="IAnnotationTransformer.AnnotationTransformerClass"/>
+  </listeners>
+  <test thread-count="5" name="test(failed)">
+    <classes>
+      <class name="IAnnotationTransformer.ClassContatiningTestCases">
+        <methods>
+          <include name="testCase1"/>
+        </methods>
+      </class> <!-- IAnnotationTransformer.ClassContatiningTestCases -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
